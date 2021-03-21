@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> Array Example</title>
+        <script type="text/javascript">
+            var studentArray= new Array("John","Clodia","Tenna","Jack");
+            Array.prototype.displayItems=function(){
+                for(i=0;i<this.length;i++){
+                    document.write(this[i]+"<br />");
+                }
+            }
+
+            document.write("Array:");
+            studentArray.displayItems();
+
+            document.write("<br/> Sorted Array: <br/>");
+            studentArray.sort();
+            studentArray.displayItems();
+           
+            document.write("<br/> Reversed Array: <br/>");
+            studentArray.reverse();
+            studentArray.displayItems();
+            
+            document.write("<br/> Poped Array: <br/>");
+            studentArray.pop();
+            studentArray.displayItems();
+
+            document.write("<br/> pushed Array: <br/>");
+            studentArray.push("Meera");
+            studentArray.displayItems();
+
+        </script>
+    </head>
+</html>
